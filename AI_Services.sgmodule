@@ -3,7 +3,7 @@
 #!system=mac
 
 [Proxy Group]
-AI_Premium = 新加坡 02
+AI_Premium = url-test, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=180, tolerance=50, timeout=3, url=http://www.gstatic.com/generate_204
 
 [Rule]
 # 1. OpenAI (ChatGPT)
