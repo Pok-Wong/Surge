@@ -1,57 +1,40 @@
-#!name=AI Services 全家桶
+#!name=AI Services 全家桶 (Safe)
 #!desc=集结 ChatGPT, Claude, Gemini, Perplexity。自动优选 US/SG/JP 节点，解决锁区问题。
 #!system=ios,mac
 
 [Proxy Group]
-# 🆕 创建 AI 专属策略组
-# 自动筛选：美国(US)、新加坡(SG)、日本(JP)
-# 策略：自动选择延迟最低的节点
-🤖 AI Premium = url-test, include-all-proxies=true, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=300, tolerance=50
+# 策略组名称已简化为纯字母数字，防止编码问题
+AI_Premium = url-test, include-all-proxies=true, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=300, tolerance=50
 
 [Rule]
-# ==============================
 # 1. OpenAI (ChatGPT)
-# ==============================
-DOMAIN-SUFFIX,chatgpt.com,🤖 AI Premium
-DOMAIN-SUFFIX,openai.com,🤖 AI Premium
-DOMAIN-SUFFIX,oaistatic.com,🤖 AI Premium
-DOMAIN-SUFFIX,oaiusercontent.com,🤖 AI Premium
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 AI Premium
-DOMAIN-KEYWORD,openai,🤖 AI Premium
+DOMAIN-SUFFIX,chatgpt.com,AI_Premium
+DOMAIN-SUFFIX,openai.com,AI_Premium
+DOMAIN-SUFFIX,oaistatic.com,AI_Premium
+DOMAIN-SUFFIX,oaiusercontent.com,AI_Premium
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,AI_Premium
+DOMAIN-KEYWORD,openai,AI_Premium
 
-# ==============================
 # 2. Anthropic (Claude)
-# ==============================
-DOMAIN-SUFFIX,claude.ai,🤖 AI Premium
-DOMAIN-SUFFIX,anthropic.com,🤖 AI Premium
-DOMAIN-SUFFIX,anthropicusercontent.com,🤖 AI Premium
+DOMAIN-SUFFIX,claude.ai,AI_Premium
+DOMAIN-SUFFIX,anthropic.com,AI_Premium
+DOMAIN-SUFFIX,anthropicusercontent.com,AI_Premium
 
-# ==============================
 # 3. Perplexity AI
-# ==============================
-DOMAIN-SUFFIX,perplexity.ai,🤖 AI Premium
-DOMAIN-SUFFIX,pplx.ai,🤖 AI Premium
+DOMAIN-SUFFIX,perplexity.ai,AI_Premium
+DOMAIN-SUFFIX,pplx.ai,AI_Premium
 
-# ==============================
 # 4. Google Gemini
-# ==============================
-# 核心服务
-DOMAIN-SUFFIX,gemini.google.com,🤖 AI Premium
-DOMAIN-SUFFIX,bard.google.com,🤖 AI Premium
-DOMAIN-SUFFIX,aistudio.google.com,🤖 AI Premium
-DOMAIN-SUFFIX,alkalimakers.google.com,🤖 AI Premium
-# API 与开发
-DOMAIN-SUFFIX,generativelanguage.googleapis.com,🤖 AI Premium
-DOMAIN-SUFFIX,proactivetips-pa.googleapis.com,🤖 AI Premium
-# 依赖与图片
-DOMAIN-SUFFIX,deepmind.google,🤖 AI Premium
-DOMAIN-SUFFIX,deepmind.com,🤖 AI Premium
-DOMAIN-SUFFIX,ogads-pa.clients6.google.com,🤖 AI Premium
+DOMAIN-SUFFIX,gemini.google.com,AI_Premium
+DOMAIN-SUFFIX,bard.google.com,AI_Premium
+DOMAIN-SUFFIX,aistudio.google.com,AI_Premium
+DOMAIN-SUFFIX,alkalimakers.google.com,AI_Premium
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,AI_Premium
+DOMAIN-SUFFIX,proactivetips-pa.googleapis.com,AI_Premium
+DOMAIN-SUFFIX,deepmind.google,AI_Premium
+DOMAIN-SUFFIX,deepmind.com,AI_Premium
+DOMAIN-SUFFIX,ogads-pa.clients6.google.com,AI_Premium
 
-# ==============================
-# 5. 通用 Google 组件 (可选)
-# ==============================
-# 建议开启，防止 Google 账号因频繁跳IP被风控，同时解决 AI 生成图片裂图问题
-DOMAIN-SUFFIX,googleusercontent.com,🤖 AI Premium
-# 如果您希望 Google 搜索也强制走 AI 线路，请取消下面这行的注释
-DOMAIN-KEYWORD,google,🤖 AI Premium
+# 5. 通用 Google 组件
+DOMAIN-SUFFIX,googleusercontent.com,AI_Premium
+# DOMAIN-KEYWORD,google,AI_Premium
