@@ -2,38 +2,38 @@
 #!desc=ChatGPT, Claude, Gemini, Perplexity。自动优选 US/SG/JP 节点，解决锁区问题。
 #!system=mac
 
-[Proxy Group]
-AIGroup = url-test, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=180, tolerance=50, timeout=3, url=http://www.gstatic.com/generate_204
+#[Proxy Group]
+#新加坡 04 = url-test, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=180, tolerance=50, timeout=3, url=http://www.gstatic.com/generate_204
 
 [Rule]
 # 1. OpenAI (ChatGPT)
-DOMAIN-SUFFIX,chatgpt.com,AIGroup
-DOMAIN-SUFFIX,openai.com,AIGroup
-DOMAIN-SUFFIX,oaistatic.com,AIGroup
-DOMAIN-SUFFIX,oaiusercontent.com,AIGroup
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net,AIGroup
-DOMAIN-KEYWORD,openai,AIPremium
+DOMAIN-SUFFIX,chatgpt.com,新加坡 04
+DOMAIN-SUFFIX,openai.com,新加坡 04
+DOMAIN-SUFFIX,oaistatic.com,新加坡 04
+DOMAIN-SUFFIX,oaiusercontent.com,新加坡 04
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,新加坡 04
+DOMAIN-KEYWORD,openai,新加坡 04
 
 # 2. Anthropic (Claude)
-DOMAIN-SUFFIX,claude.ai,AIGroup
-DOMAIN-SUFFIX,anthropic.com,AIGroup
-DOMAIN-SUFFIX,anthropicusercontent.com,AIGroup
+DOMAIN-SUFFIX,claude.ai,新加坡 04
+DOMAIN-SUFFIX,anthropic.com,新加坡 04
+DOMAIN-SUFFIX,anthropicusercontent.com,新加坡 04
 
 # 3. Perplexity AI
-DOMAIN-SUFFIX,perplexity.ai,AIGroup
-DOMAIN-SUFFIX,pplx.ai,AIGroup
+DOMAIN-SUFFIX,perplexity.ai,新加坡 04
+DOMAIN-SUFFIX,pplx.ai,新加坡 04
 
 # 4. Google Gemini
-DOMAIN-SUFFIX,gemini.google.com,AIGroup
-DOMAIN-SUFFIX,bard.google.com,AIGroup
-DOMAIN-SUFFIX,aistudio.google.com,AIGroup
-DOMAIN-SUFFIX,alkalimakers.google.com,AIGroup
-DOMAIN-SUFFIX,generativelanguage.googleapis.com,AIGroup
-DOMAIN-SUFFIX,proactivetips-pa.googleapis.com,AIGroup
-DOMAIN-SUFFIX,deepmind.google,AIGroup
-DOMAIN-SUFFIX,deepmind.com,AIGroup
-DOMAIN-SUFFIX,ogads-pa.clients6.google.com,AIGroup
+DOMAIN-SUFFIX,gemini.google.com,新加坡 04
+DOMAIN-SUFFIX,bard.google.com,新加坡 04
+DOMAIN-SUFFIX,aistudio.google.com,新加坡 04
+DOMAIN-SUFFIX,alkalimakers.google.com,新加坡 04
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,新加坡 04
+DOMAIN-SUFFIX,proactivetips-pa.googleapis.com,新加坡 04
+DOMAIN-SUFFIX,deepmind.google,新加坡 04
+DOMAIN-SUFFIX,deepmind.com,新加坡 04
+DOMAIN-SUFFIX,ogads-pa.clients6.google.com,新加坡 04
 
 # 5. 通用 Google 组件
-DOMAIN-SUFFIX,googleusercontent.com,AIGroup
-# DOMAIN-KEYWORD,google,AIGroup
+DOMAIN-SUFFIX,googleusercontent.com,新加坡 04
+# DOMAIN-KEYWORD,google,新加坡 04
