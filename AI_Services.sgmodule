@@ -1,11 +1,10 @@
-#!name=AI Services 全家桶 (Universal)
-#!desc=集结 ChatGPT, Claude, Gemini, Perplexity。请在导入后手动编辑 AI_Premium 策略组，填入 US/SG/JP 节点名称。
+#!name=AI Services FINAL (ASCII Safe)
 #!system=ios,mac
 
 [Proxy Group]
-# 策略组已简化为最基本的 url-test 格式
-# 注意：[节点名称1, 节点名称2, ...] 这些是占位符，请您在导入成功后手动替换！
-AI_Premium = url-test, 节点名称1, 节点名称2, 节点名称3, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50
+# 策略组名称已简化，请在导入后手动编辑，替换占位符
+# Placeholder 已经改成纯英文，以避免中文解析问题
+AI_Premium = url-test, PlaceholderA, PlaceholderB, PlaceholderC, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50
 
 [Rule]
 # 1. OpenAI (ChatGPT)
