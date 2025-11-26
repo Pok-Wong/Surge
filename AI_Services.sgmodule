@@ -3,37 +3,37 @@
 #!system=mac
 
 [Proxy Group]
-AI_Premium = url-test, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=180, tolerance=50, timeout=3, url=http://www.gstatic.com/generate_204
+AIPremium = url-test, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=180, tolerance=50, timeout=3, url=http://www.gstatic.com/generate_204
 
 [Rule]
 # 1. OpenAI (ChatGPT)
-DOMAIN-SUFFIX,chatgpt.com,AI_Premium
-DOMAIN-SUFFIX,openai.com,AI_Premium
-DOMAIN-SUFFIX,oaistatic.com,AI_Premium
-DOMAIN-SUFFIX,oaiusercontent.com,AI_Premium
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net,AI_Premium
-DOMAIN-KEYWORD,openai,AI_Premium
+DOMAIN-SUFFIX,chatgpt.com,AIPremium
+DOMAIN-SUFFIX,openai.com,AIPremium
+DOMAIN-SUFFIX,oaistatic.com,AIPremium
+DOMAIN-SUFFIX,oaiusercontent.com,AIPremium
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,AIPremium
+DOMAIN-KEYWORD,openai,AIPremium
 
 # 2. Anthropic (Claude)
-DOMAIN-SUFFIX,claude.ai,AI_Premium
-DOMAIN-SUFFIX,anthropic.com,AI_Premium
-DOMAIN-SUFFIX,anthropicusercontent.com,AI_Premium
+DOMAIN-SUFFIX,claude.ai,AIPremium
+DOMAIN-SUFFIX,anthropic.com,AIPremium
+DOMAIN-SUFFIX,anthropicusercontent.com,AIPremium
 
 # 3. Perplexity AI
-DOMAIN-SUFFIX,perplexity.ai,AI_Premium
-DOMAIN-SUFFIX,pplx.ai,AI_Premium
+DOMAIN-SUFFIX,perplexity.ai,AIPremium
+DOMAIN-SUFFIX,pplx.ai,AIPremium
 
 # 4. Google Gemini
-DOMAIN-SUFFIX,gemini.google.com,AI_Premium
-DOMAIN-SUFFIX,bard.google.com,AI_Premium
-DOMAIN-SUFFIX,aistudio.google.com,AI_Premium
-DOMAIN-SUFFIX,alkalimakers.google.com,AI_Premium
-DOMAIN-SUFFIX,generativelanguage.googleapis.com,AI_Premium
-DOMAIN-SUFFIX,proactivetips-pa.googleapis.com,AI_Premium
-DOMAIN-SUFFIX,deepmind.google,AI_Premium
+DOMAIN-SUFFIX,gemini.google.com,AIPremium
+DOMAIN-SUFFIX,bard.google.com,AIPremium
+DOMAIN-SUFFIX,aistudio.google.com,AIPremium
+DOMAIN-SUFFIX,alkalimakers.google.com,AIPremium
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,AIPremium
+DOMAIN-SUFFIX,proactivetips-pa.googleapis.com,AIPremium
+DOMAIN-SUFFIX,deepmind.google,AIPremium
 DOMAIN-SUFFIX,deepmind.com,AI_Premium
-DOMAIN-SUFFIX,ogads-pa.clients6.google.com,AI_Premium
+DOMAIN-SUFFIX,ogads-pa.clients6.google.com,AIPremium
 
 # 5. 通用 Google 组件
-DOMAIN-SUFFIX,googleusercontent.com,AI_Premium
-# DOMAIN-KEYWORD,google,AI_Premium
+DOMAIN-SUFFIX,googleusercontent.com,AIPremium
+# DOMAIN-KEYWORD,google,AIPremium
