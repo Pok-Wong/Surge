@@ -3,8 +3,6 @@
 #!system=mac
 
 [Proxy Group]
-# 策略组名称已简化为纯字母数字，防止编码问题
-# AI_Premium = url-test, include-all-proxies=true, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=300, tolerance=50
 AI_Premium = url-test, 日本 01, 日本 02, 日本 03, 日本 04, 日本 05, 日本 06, 日本 07, 日本 08, 日本 09, 日本 10, 新加坡 01, 新加坡 02, 新加坡 03, 新加坡 04, 新加坡 05, 新加坡 06, 新加坡 07, 新加坡 08, 新加坡 09, 新加坡 10, 美国 01, 美国 02, 美国 03, 美国 04, 美国 05, 美国 06, 美国 07, 美国 08, 美国 09, 美国 10, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50
 
 [Rule]
