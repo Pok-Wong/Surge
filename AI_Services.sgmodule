@@ -1,10 +1,11 @@
-#!name=AI Services 全家桶 (Safe)
-#!desc=集结 ChatGPT, Claude, Gemini, Perplexity。自动优选 US/SG/JP 节点，解决锁区问题。
+#!name=AI Services 全家桶 (Universal)
+#!desc=集结 ChatGPT, Claude, Gemini, Perplexity。请在导入后手动编辑 AI_Premium 策略组，填入 US/SG/JP 节点名称。
 #!system=ios,mac
 
 [Proxy Group]
-# 策略组名称已简化为纯字母数字，防止编码问题
-AI_Premium = url-test, include-all-proxies=true, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=300, tolerance=50
+# 策略组已简化为最基本的 url-test 格式
+# 注意：[节点名称1, 节点名称2, ...] 这些是占位符，请您在导入成功后手动替换！
+AI_Premium = url-test, 节点名称1, 节点名称2, 节点名称3, url=http://www.gstatic.com/generate_204, interval=300, tolerance=50
 
 [Rule]
 # 1. OpenAI (ChatGPT)
@@ -37,4 +38,3 @@ DOMAIN-SUFFIX,ogads-pa.clients6.google.com,AI_Premium
 
 # 5. 通用 Google 组件
 DOMAIN-SUFFIX,googleusercontent.com,AI_Premium
-# DOMAIN-KEYWORD,google,AI_Premium
