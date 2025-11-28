@@ -3,37 +3,37 @@
 #!system=mac
 
 #[Proxy Group]
-#新加坡 04 = url-test, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=180, tolerance=50, timeout=3, url=http://www.gstatic.com/generate_204
+#新加坡 05 = url-test, policy-regex-filter=(?i)(美国|US|States|新加坡|SG|Singapore|日本|JP|Japan), interval=180, tolerance=50, timeout=3, url=http://www.gstatic.com/generate_204
 
 [Rule]
 # 1. OpenAI (ChatGPT)
-DOMAIN-SUFFIX,chatgpt.com,新加坡 04
-DOMAIN-SUFFIX,openai.com,新加坡 04
-DOMAIN-SUFFIX,oaistatic.com,新加坡 04
-DOMAIN-SUFFIX,oaiusercontent.com,新加坡 04
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net,新加坡 04
-DOMAIN-KEYWORD,openai,新加坡 04
+DOMAIN-SUFFIX,chatgpt.com,新加坡 05
+DOMAIN-SUFFIX,openai.com,新加坡 05
+DOMAIN-SUFFIX,oaistatic.com,新加坡 05
+DOMAIN-SUFFIX,oaiusercontent.com,新加坡 05
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,新加坡 05
+DOMAIN-KEYWORD,openai,新加坡 05
 
 # 2. Anthropic (Claude)
-DOMAIN-SUFFIX,claude.ai,新加坡 04
-DOMAIN-SUFFIX,anthropic.com,新加坡 04
-DOMAIN-SUFFIX,anthropicusercontent.com,新加坡 04
+DOMAIN-SUFFIX,claude.ai,新加坡 05
+DOMAIN-SUFFIX,anthropic.com,新加坡 05
+DOMAIN-SUFFIX,anthropicusercontent.com,新加坡 05
 
 # 3. Perplexity AI
-DOMAIN-SUFFIX,perplexity.ai,新加坡 04
-DOMAIN-SUFFIX,pplx.ai,新加坡 04
+DOMAIN-SUFFIX,perplexity.ai,新加坡 05
+DOMAIN-SUFFIX,pplx.ai,新加坡 05
 
 # 4. Google Gemini
-DOMAIN-SUFFIX,gemini.google.com,新加坡 04
-DOMAIN-SUFFIX,bard.google.com,新加坡 04
-DOMAIN-SUFFIX,aistudio.google.com,新加坡 04
-DOMAIN-SUFFIX,alkalimakers.google.com,新加坡 04
-DOMAIN-SUFFIX,generativelanguage.googleapis.com,新加坡 04
-DOMAIN-SUFFIX,proactivetips-pa.googleapis.com,新加坡 04
-DOMAIN-SUFFIX,deepmind.google,新加坡 04
-DOMAIN-SUFFIX,deepmind.com,新加坡 04
-DOMAIN-SUFFIX,ogads-pa.clients6.google.com,新加坡 04
+DOMAIN-SUFFIX,gemini.google.com,新加坡 05
+DOMAIN-SUFFIX,bard.google.com,新加坡 05
+DOMAIN-SUFFIX,aistudio.google.com,新加坡 05
+DOMAIN-SUFFIX,alkalimakers.google.com,新加坡 05
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,新加坡 05
+DOMAIN-SUFFIX,proactivetips-pa.googleapis.com,新加坡 05
+DOMAIN-SUFFIX,deepmind.google,新加坡 05
+DOMAIN-SUFFIX,deepmind.com,新加坡 05
+DOMAIN-SUFFIX,ogads-pa.clients6.google.com,新加坡 05
 
 # 5. 通用 Google 组件
-DOMAIN-SUFFIX,googleusercontent.com,新加坡 04
-# DOMAIN-KEYWORD,google,新加坡 04
+DOMAIN-SUFFIX,googleusercontent.com,新加坡 05
+# DOMAIN-KEYWORD,google,新加坡 05
